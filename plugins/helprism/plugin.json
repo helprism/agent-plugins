@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "helprism",
+  "version": "0.1.0",
+  "description": "Keeps a Helprism help center true when you ship: after a code change, the helprism-sync skill decides whether any published article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Beta.",
+  "author": {
+    "name": "Helprism",
+    "email": "help@helprism.com",
+    "url": "https://helprism.com"
+  },
+  "homepage": "https://helprism.com/features/sync",
+  "repository": "https://github.com/helprism/agent-plugins",
+  "license": "MIT",
+  "keywords": ["helprism", "help-center", "documentation", "knowledge-base", "docs", "sync"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Helprism sync",
+        "developerName": "Helprism",
+        "shortDescription": "Keep your help center true when you ship",
+        "longDescription": "After your coding agent finishes a change, the helprism-sync skill decides whether any article in your Helprism help center is now wrong or incomplete, drafts the full rewrite, and sends it to Helprism for human review through the Helprism MCP server. Nothing is published by the skill; a person accepts, edits or rejects each suggestion in the Helprism Changes inbox. Only file paths, the commit subject, a one-line impact note and article prose are sent, never code or diffs. Needs a Helprism workspace (Pro or Business) and the @helprism/mcp server connected with your API key. Beta: expect some missed updates and the occasional false alarm.",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://helprism.com",
+        "supportURL": "https://helprism.com/contact",
+        "privacyPolicyURL": "https://helprism.com/privacy",
+        "termsOfServiceURL": "https://helprism.com/terms",
+        "defaultPrompt": [
+          "Run helprism-sync on this change.",
+          "I'm about to open a pull request; run helprism-sync first.",
+          "List the pending Helprism suggestions and show me the diff for the first one."
+        ],
+        "brandColor": "#1A3CE5"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "helprism",
+  "displayName": "Helprism sync",
+  "version": "0.1.0",
+  "description": "Keeps a Helprism help center true when you ship: after a code change, the helprism-sync skill decides whether any published article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Beta.",
+  "author": {
+    "name": "Helprism",
+    "email": "help@helprism.com",
+    "url": "https://helprism.com"
+  },
+  "homepage": "https://helprism.com/features/sync",
+  "repository": "https://github.com/helprism/agent-plugins",
+  "license": "MIT",
+  "keywords": ["helprism", "help-center", "documentation", "knowledge-base", "docs", "sync"],
+  "documentationUrl": "https://helprism.com/features/mcp-server",
+  "supportUrl": "https://helprism.com/contact",
+  "privacyPolicyUrl": "https://helprism.com/privacy",
+  "termsOfServiceUrl": "https://helprism.com/terms"
+}
