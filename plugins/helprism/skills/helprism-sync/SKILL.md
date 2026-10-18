@@ -2,7 +2,7 @@
 name: helprism-sync
 description: Beta. Use after you finish a code change, or before you open a pull request, in the session that wrote the change. Decides whether the Helprism help center is now wrong or incomplete for its readers and, if so, drafts the exact article rewrites and sends them to Helprism for human review through the Helprism MCP server (report_change). Many changes need nothing.
 license: MIT
-compatibility: Needs the Helprism MCP server (@helprism/mcp) connected with a Helprism API key, and git.
+compatibility: Needs the Helprism MCP server, and git. Connect the hosted server at https://api.helprism.com/mcp and sign in with your browser when asked (no API key), or run the local @helprism/mcp package after npx -y @helprism/mcp@latest login. An API key is for CI only.
 metadata:
   version: agent-door-v3 (2026-09-23)
   procedureVersion: v3-4544eddb

@@ -1,0 +1,17 @@
+{
+  "name": "helprism",
+  "description": "Helprism plugins for coding agents: keep your help center true when you ship.",
+  "owner": {
+    "name": "Helprism",
+    "email": "help@helprism.com",
+    "url": "https://helprism.com"
+  },
+  "plugins": [
+    {
+      "name": "helprism",
+      "source": "./plugins/helprism",
+      "description": "Helprism sync (beta): after a code change, the helprism-sync skill decides whether any help article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Connects the hosted Helprism MCP server; sign in with your browser when asked.",
+      "category": "productivity"
+    }
+  ]
+}

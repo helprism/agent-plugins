@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "helprism": {
+      "type": "http",
+      "url": "https://api.helprism.com/mcp"
+    }
+  }
+}

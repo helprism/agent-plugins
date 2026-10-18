@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "helprism",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Keeps a Helprism help center true when you ship: after a code change, the helprism-sync skill decides whether any published article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Beta.",
   "author": {
     "name": "Helprism",
@@ -18,7 +18,7 @@
         "displayName": "Helprism sync",
         "developerName": "Helprism",
         "shortDescription": "Keep your help center true when you ship",
-        "longDescription": "After your coding agent finishes a change, the helprism-sync skill decides whether any article in your Helprism help center is now wrong or incomplete, drafts the full rewrite, and sends it to Helprism for human review through the Helprism MCP server. Nothing is published by the skill; a person accepts, edits or rejects each suggestion in the Helprism Changes inbox. Only file paths, the commit subject, a one-line impact note and article prose are sent, never code or diffs. Needs a Helprism workspace (Pro or Business) and the @helprism/mcp server connected with your API key. Beta: expect some missed updates and the occasional false alarm.",
+        "longDescription": "After your coding agent finishes a change, the helprism-sync skill decides whether any article in your Helprism help center is now wrong or incomplete, drafts the full rewrite, and sends it to Helprism for human review through the hosted Helprism MCP server (https://api.helprism.com/mcp), which the plugin connects. Nothing is published by the skill; a person accepts, edits or rejects each suggestion in the Helprism Changes inbox. Only file paths, the commit subject, a one-line impact note and article prose are sent, never code or diffs. Needs a Helprism workspace (Pro or Business); the first time, you sign in to Helprism in your browser and approve the connection. No API key. Beta: expect some missed updates and the occasional false alarm.",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],
         "websiteURL": "https://helprism.com",

@@ -1,7 +1,7 @@
 {
   "name": "helprism",
   "displayName": "Helprism sync",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Keeps a Helprism help center true when you ship: after a code change, the helprism-sync skill decides whether any published article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Beta.",
   "author": {
     "name": "Helprism",
