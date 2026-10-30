@@ -1,0 +1,27 @@
+{
+  "name": "helprism",
+  "owner": {
+    "name": "Helprism",
+    "email": "help@helprism.com"
+  },
+  "metadata": {
+    "description": "Helprism plugins for coding agents: keep your help center true when you ship."
+  },
+  "plugins": [
+    {
+      "name": "helprism",
+      "source": "plugins/helprism",
+      "description": "Helprism sync (beta): after a code change, the helprism-sync skill decides whether any help article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Connects the hosted Helprism MCP server; sign in with your browser when asked."
+    }
+  ],
+  "description": "Keeps a Helprism help center true when you ship: after a code change, the helprism-sync skill decides whether any published article is now wrong or incomplete, drafts the rewrite, and sends it to Helprism for human review. Beta.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Helprism",
+    "email": "help@helprism.com"
+  },
+  "homepage": "https://helprism.com/features/sync?ref=cursor_dir&utm_source=dir_cursor&utm_medium=directory",
+  "license": "MIT",
+  "logo": "plugins/helprism/.claude-plugin/icon.png",
+  "keywords": ["helprism", "help-center", "documentation", "knowledge-base", "docs", "sync"]
+}
